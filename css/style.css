@@ -1,0 +1,112 @@
+a {
+    text-decoration: none;
+}
+.wrap {
+    max-width: 901px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*TITLE*/
+.title-h1 {
+    font-family: "Gotham", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #303030;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+}
+.title-h1>span {
+    display: block;
+    font-family: "Georgia", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: #5a5a5a;
+    text-transform: none;
+    margin-top: 25px;
+    letter-spacing: 0;
+}
+/*PAGE-HEADER*/
+.page-header {
+    padding: 40px 0 44px;
+}
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    display: block;
+    width: 73px;
+    height: 19px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+}
+.nav-header {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.nav-header>li {
+    display: inline-block;
+    padding-left: 94px;
+}
+.nav-header-item {
+    font-family: "Gotham", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #a7a7a7;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+.nav-header-item:hover {
+    text-decoration: underline;
+}
+/*PAGE-HERO*/
+.page-hero {
+    padding: 162px 0 55px;
+    background-image: url("../img/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+.page-hero .title-h1 {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.btn-down, .btn-close {
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/btn-down.png");
+    background-repeat: no-repeat;
+    margin: 67px auto 0;
+}
+.btn-close {
+    display: none;
+}
+.btn-down:focus, .btn-close:focus {
+    outline: none;
+}
+.box-hero {
+    display: none;
+    position: absolute;
+    bottom: -92px;
+    left: 0;
+    right: 0;
+    background-color: #f7f7f7;
+    padding: 20px 0;
+}
+.box-hero .text {
+    font-family: "Gotham", sans-serif;
+    font-size: 17px;
+    color: #9c9c9c;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
