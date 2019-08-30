@@ -7,6 +7,16 @@ a {
     padding-left: 15px;
     padding-right: 15px;
 }
+.box-text {
+    font-family: "ProximaNova", sans-serif;
+    font-size: 16px;
+    color: #5a5a5a;
+    max-width: 542px;
+    margin: 0 auto 48px;
+    text-align: center;
+    padding: 16px 0 0;
+    line-height: 1.5;
+}
 /*TITLE*/
 .title-h1 {
     font-family: "Gotham", sans-serif;
@@ -26,6 +36,32 @@ a {
     text-transform: none;
     margin-top: 25px;
     letter-spacing: 0;
+}
+.title-h2 {
+    font-family: "Gotham", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #303030;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.1px;
+    position: relative;
+}
+.title-h2::after {
+    content: "";
+    position: absolute;
+    top: 46px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 3px;
+    background-color: #303030;
+}
+.page-work .title-h2::after {
+    width: 240px;
+}
+.page-team .title-h2::after {
+    width: 184px;
 }
 /*PAGE-HEADER*/
 .page-header {
@@ -72,13 +108,12 @@ a {
     background-size: cover;
     background-position: center;
     text-align: center;
-    position: relative;
 }
 .page-hero .title-h1 {
     max-width: 500px;
     margin: 0 auto;
 }
-.btn-down, .btn-close {
+.btn-down {
     display: block;
     background-color: transparent;
     border: none;
@@ -88,25 +123,110 @@ a {
     background-repeat: no-repeat;
     margin: 67px auto 0;
 }
-.btn-close {
-    display: none;
-}
-.btn-down:focus, .btn-close:focus {
+.btn-down:focus {
     outline: none;
 }
+/*BOX-HERO*/
 .box-hero {
     display: none;
-    position: absolute;
-    bottom: -92px;
-    left: 0;
-    right: 0;
     background-color: #f7f7f7;
     padding: 20px 0;
 }
 .box-hero .text {
     font-family: "Gotham", sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     color: #9c9c9c;
     text-transform: uppercase;
     letter-spacing: 0.3px;
+}
+/*PAGE-WORK*/
+.page-work {
+    padding: 18px 0 82px;
+}
+.flex-work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-work-item {
+    flex-basis: 29%;
+    margin-bottom: 57px;
+}
+/*PAGE-TEAM*/
+.page-team {
+    background-color: #f3f3f3;
+    padding: 18px 0 40px;
+}
+.flex-team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-team-item {
+    flex-basis: 23.5%;
+    background-color: #fff;
+    box-shadow: 0px 3px 3px #ccc;
+    text-align: center;
+    padding: 23px 0 12px;
+}
+.name {
+    font-family: "Gotham", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #303030;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 9px 0 0;
+}
+.position {
+    font-family: "Georgia", serif;
+    font-size: 12px;
+    font-style: italic;
+    color: #303030;
+    margin-bottom: 19px;
+}
+.social {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.social>li {
+    display: inline-block;
+    padding-right: 11px;
+}
+.social>li:last-child {
+    padding-right: 0;
+}
+.social-item {
+    display: block;
+    width: 20px;
+    height: 18px;
+    background-image: url("../img/btn-social.png");
+    background-repeat: no-repeat;
+}
+.social-twitter {
+    background-position: 0 0;
+}
+.social-linkedin {
+    background-position: -73px 0;
+}
+.social-dribbbel {
+    background-position: -36px 0;
+}
+.social-skype {
+    background-position: -101px 0;
+}
+.social-twitter:hover {
+    background-position: 0 -23px;
+}
+.social-linkedin:hover {
+    background-position: -73px -23px;
+}
+.social-dribbbel:hover {
+    background-position: -36px -23px;
+}
+.social-skype:hover {
+    background-position: -101px -23px;
 }

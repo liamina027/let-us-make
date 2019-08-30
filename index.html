@@ -29,9 +29,9 @@
         <div class="wrap flex-header">
             <div class="logo"></div>
             <ul class="nav-header">
-                <li><a href="" class="nav-header-item">work</a></li>
-                <li><a href="" class="nav-header-item">team</a></li>
-                <li><a href="" class="nav-header-item">contact</a></li>
+                <li><a href="#work" class="nav-header-item">work</a></li>
+                <li><a href="#team" class="nav-header-item">team</a></li>
+                <li><a href="#contact" class="nav-header-item">contact</a></li>
             </ul>
         </div>
     </div>
@@ -39,24 +39,97 @@
         <div class="wrap">
             <h1 class="title-h1">let us make your&nbsp;lives easier <span>We specialize in crafting awesome ideas for web, mobile and beyond.</span></h1>
             <button type="button" class="btn-down"></button>
-            <button type="button" class="btn-close"></button>
-            <div class="box-hero">
-                <p class="text">We are a small team of experts, chasing responsive design, perfect pixels and prideful code.</p>
+        </div>
+    </div>
+    <div class="box-hero">
+        <div class="wrap">
+            <p class="text">We are a small team of experts, chasing responsive design, perfect pixels and prideful code.</p>
+        </div>
+    </div>
+    <div class="page-work" id="work">
+        <div class="wrap">
+            <h2 class="title-h2">featured work</h2>
+            <p class = "box-text">Here you can find some of our latest works, to see the details of these works just click the thumbnails below.</p>
+            <div class="flex-work">
+                <div class="flex-work-item">
+                    <a href="" class="link-work-item" target="_blank"><img src="img/pillter.png" alt="Screen"></a>
+                </div>
+                <div class="flex-work-item">
+                    <a href="" class="link-work-item" target="_blank"><img src="img/touchmania.png" alt="Screen"></a>
+                </div>
+                <div class="flex-work-item">
+                    <a href="" class="link-work-item" target="_blank"><img src="img/locate.png" alt="Screen"></a>
+                </div>
+                <div class="flex-work-item">
+                    <a href="" class="link-work-item" target="_blank"><img src="img/umberapp.png" alt="Screen"></a>
+                </div>
+                <div class="flex-work-item">
+                    <a href="" class="link-work-item" target="_blank"><img src="img/hipo.png" alt="Screen"></a>
+                </div>
+                <div class="flex-work-item">
+                    <a href="" class="link-work-item" target="_blank"><img src="img/pardio.png" alt="Screen"></a>
+                </div>
+                <div class="flex-work-item">
+                    <a href="" class="link-work-item" target="_blank"><img src="img/banadediki.png" alt="Screen"></a>
+                </div>
+                <div class="flex-work-item">
+                    <a href="" class="link-work-item" target="_blank"><img src="img/biz-corner.png" alt="Screen"></a>
+                </div>
+                <div class="flex-work-item">
+                    <a href="" class="link-work-item" target="_blank"><img src="img/arabul.png" alt="Screen"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-team" id="team">
+        <div class="wrap">
+            <h2 class="title-h2">team</h2>
+            <p class="box-text">We are a hard working group, who's aim is to listen to your problems and&nbsp;to&nbsp;come&nbsp;up with the best solution possible. We follow the lates trends on the web to create custom talierd niche websites.</p>
+            <div class="flex-team">
+                <div class="flex-team-item">
+                    <img src="img/developer.png" alt="Developer">
+                    <p class="name">naME sURNAME</p>
+                    <p class="position">Lead Developer</p>
+                    <ul class="social">
+                        <li><a href="" class = "social-item social-twitter" target="_blank"></a></li>
+                        <li><a href="" class = "social-item social-linkedin" target="_blank"></a></li>
+                    </ul>
+                </div>
+                <div class="flex-team-item">
+                    <img src="img/desinger.png" alt="Developer">
+                    <p class="name">naME sURNAME</p>
+                    <p class="position">Lead Designer</p>
+                    <ul class="social">
+                        <li><a href="" class = "social-item social-twitter" target="_blank"></a></li>
+                        <li><a href="" class = "social-item social-dribbbel" target="_blank"></a></li>
+                        <li><a href="" class = "social-item social-linkedin" target="_blank"></a></li>
+                    </ul>
+                </div>
+                <div class="flex-team-item">
+                    <img src="img/marketing-director.png" alt="Developer">
+                    <p class="name">naME sURNAME</p>
+                    <p class="position">Marketing Director</p>
+                    <ul class="social">
+                        <li><a href="" class = "social-item social-skype" target="_blank"></a></li>
+                        <li><a href="" class = "social-item social-linkedin" target="_blank"></a></li>
+                    </ul>
+                </div>
+                <div class="flex-team-item">
+                    <img src="img/business-director.png" alt="Developer">
+                    <p class="name">naME sURNAME</p>
+                    <p class="position">Business Director</p>
+                    <ul class="social">
+                        <li><a href="" class = "social-item social-skype" target="_blank"></a></li>
+                        <li><a href="" class = "social-item social-linkedin" target="_blank"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
         $(".btn-down").click(function(){
-            $(".box-hero").show();
-            $(".btn-down").hide();
-            $(".btn-close").show();
-        });
-        $(".btn-close").click(function(){
-            $(".box-hero").hide();
-            $(".btn-down").show();
-            $(".btn-close").hide();
-
+            $(".box-hero").fadeToggle();
         });
     </script>
 </body>
