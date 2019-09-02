@@ -459,7 +459,7 @@ a {
     text-decoration: underline;
 }
 /*MEDIA*/
-@media (min-width: 1500px) {
+@media (max-width: 1900px) {
     .wrap {
         max-width: 1200px;
     }
