@@ -459,7 +459,7 @@ a {
     text-decoration: underline;
 }
 /*MEDIA*/
-@media (max-width: 1900px) {
+@media (max-width: 1920px) {
     .wrap {
         max-width: 1200px;
     }
@@ -485,7 +485,7 @@ a {
             flex-basis: 40%;
     }
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .nav-header {
         display: none;
     }
